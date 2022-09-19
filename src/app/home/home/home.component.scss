@@ -1,3 +1,12 @@
+@import '../../share/texts.scss';
+$color: rgb(255,70,70);
+
 .principal-image {
     width: 100%;
+    margin-bottom: 10px;
+}
+.title {
+    @include text(1.5rem,$color);
+    text-align: center;
+    margin-bottom: 10px;
 }

@@ -1,0 +1,8 @@
+$family: 'Chewy', cursive;
+
+@mixin text($size, $color: black, $weight:normal) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+    font-weight: $weight;
+}
