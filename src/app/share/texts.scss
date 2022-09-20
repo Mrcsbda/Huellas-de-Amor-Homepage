@@ -1,8 +1,15 @@
-$family: 'Chewy', cursive;
+$font-titles: 'Chewy', cursive;
+$font-texts: 'Raleway', sans-serif;
 
+@mixin title($size, $color: black, $weight:normal) {
+    font-size: $size;
+    font-family: $font-titles;
+    color: $color;
+    font-weight: $weight;
+}
 @mixin text($size, $color: black, $weight:normal) {
     font-size: $size;
-    font-family: $family;
+    font-family: $font-texts;
     color: $color;
     font-weight: $weight;
 }
