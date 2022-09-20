@@ -1,0 +1,55 @@
+@import '../../share/texts.scss';
+$colorRed: rgb(255,70,70);
+
+.main-image-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+
+    .main-image {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.main-image-container::before {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    content: 'Adopta';
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    @include title(3.4rem, white);  
+}
+
+.title {
+    text-align: center;
+    @include title(2.3rem,$colorRed);  
+}
+
+.information-container {
+    padding: 10px 15px;
+
+    .subtitle {
+        text-align: center;
+        @include text(1.2rem,black,500);
+        margin-bottom: 10px;
+    }
+    
+    .text {
+        text-align: center;
+        margin-bottom: 10px;
+        @include text(1rem,black,400);
+    }
+    
+    .image-container{
+        display: flex;
+        justify-content: center;
+
+        .secondary-image{
+            width: 70%;
+        }
+    }
+}
