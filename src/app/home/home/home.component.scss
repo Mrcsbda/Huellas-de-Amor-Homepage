@@ -1,5 +1,6 @@
 @import '../../share/texts.scss';
-$color: rgb(255,70,70);
+@import '../../share/cards.scss';
+$colorRed: rgb(255,70,70);
 
 .main-image {
     width: 100%;
@@ -8,11 +9,11 @@ $color: rgb(255,70,70);
 
 .title {
     text-align: center;
-    @include title(2rem,$color);  
+    @include title(2.3rem,$colorRed);  
 }
 
 .information-container {
-    
+
     padding: 10px 15px;
 
     .text {
@@ -51,27 +52,23 @@ $color: rgb(255,70,70);
     }
 }
     .card-adopts::before {
-        bottom: 0;
-        width: 100%;
-        height: 22%;
-        display: flex;
         content: 'Adopta';
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: $color;
+        @include cardBefore($colorRed);
         @include title(1.7rem,white);
     }
     .card-alliances::before {
-        bottom: 0;
-        width: 100%;
-        height: 22%;
-        display: flex;
         content: 'Alianzas';
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: $color;
+        @include cardBefore($colorRed);
+        @include title(1.7rem,white);
+    }
+    .card-help-us::before {
+        content: 'Ayudanos';
+        @include cardBefore($colorRed);
+        @include title(1.7rem,white);
+    }
+    .card-contact::before {
+        content: 'Contacto';
+        @include cardBefore($colorRed);
         @include title(1.7rem,white);
     }
 

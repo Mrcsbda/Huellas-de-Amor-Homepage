@@ -1,3 +1,13 @@
+@import "../app/share/texts.scss";
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -13,5 +23,40 @@
   .navbar-menu {
     list-style: none;
     display: none;
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 25px;
+  height: max-content;
+  background-color: rgb(253, 181, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+
+  p {
+    @include text(1.5rem, white, 500);
+  }
+
+  .icons-container {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+
+    a {
+      margin-right: 10px;
+
+      img {
+        width: 8%;
+      }
+    }
+  }
+
+  span {
+    @include text(0.7rem, white, 300);
+    margin-bottom: 5px;
   }
 }
