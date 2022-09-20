@@ -40,7 +40,7 @@ $colorRed: rgb(255,70,70);
     flex-wrap: wrap;
     justify-content: center;
 
-    div {
+    .card {
     width: 40%;
     height: auto;
     overflow: hidden;
@@ -53,23 +53,24 @@ $colorRed: rgb(255,70,70);
 }
     .card-adopts::before {
         content: 'Adopta';
-        @include cardBefore($colorRed);
         @include title(1.7rem,white);
+        @include beforeMobile($colorRed);
     }
     .card-alliances::before {
         content: 'Alianzas';
-        @include cardBefore($colorRed);
         @include title(1.7rem,white);
+        @include beforeMobile($colorRed);
     }
     .card-help-us::before {
         content: 'Ayudanos';
-        @include cardBefore($colorRed);
         @include title(1.7rem,white);
+        @include beforeMobile($colorRed);
+        
     }
     .card-contact::before {
         content: 'Contacto';
-        @include cardBefore($colorRed);
         @include title(1.7rem,white);
+        @include beforeMobile($colorRed);
     }
 
 }
