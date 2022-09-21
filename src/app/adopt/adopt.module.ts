@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdoptComponent } from './adopt/adopt.component';
 import { AdoptRoutingModule } from './adopt-routing.module';
+import {AdoptComponent} from "./adopt.component";
 
 
 

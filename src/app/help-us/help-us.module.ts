@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HelpUsComponent } from './help-us/help-us.component';
 import { HelpUsRoutingModule } from './help-us-rounting.module';
+import {HelpUsComponent} from "./help-us.component";
 
 
 

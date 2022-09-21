@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { HelpUsComponent } from './help-us/help-us.component';
+import {HelpUsComponent} from "./help-us.component";
 
 const routes:Routes=[
     {
