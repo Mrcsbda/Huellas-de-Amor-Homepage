@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AlliancesComponent } from './alliances/alliances.component';
+import {AlliancesComponent} from "./alliances.component";
 
 const routes:Routes=[
     {

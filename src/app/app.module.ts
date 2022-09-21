@@ -8,6 +8,7 @@ import { HelpUsModule } from './help-us/help-us.module';
 import { ContactModule } from './contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import {CommonComponentsModule} from "./common-components/common-components.module";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
     AdoptModule,
     AlliancesModule,
     HelpUsModule,
-    ContactModule
+    ContactModule,
+    CommonComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

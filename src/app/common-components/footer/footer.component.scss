@@ -1,0 +1,36 @@
+@import "../../shared/texts.scss";
+
+footer {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  margin-top: 25px;
+  height: max-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(253, 181, 165);
+
+  p {
+    @include text(1.5rem, white, 500);
+  }
+
+  .icons-container {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+
+    a {
+      margin-right: 10px;
+
+      img {
+        width: 8%;
+      }
+    }
+  }
+
+  span {
+    margin-bottom: 5px;
+    @include text(0.7rem, white, 300);
+  }
+}

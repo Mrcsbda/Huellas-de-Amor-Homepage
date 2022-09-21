@@ -1,4 +1,4 @@
-@import '../../share/texts.scss';
+@import '../../shared/texts.scss';
 $colorRed: rgb(255,70,70);
 
 .main-image-container {
@@ -21,12 +21,12 @@ $colorRed: rgb(255,70,70);
     position: absolute;
     align-items: center;
     justify-content: center;
-    @include title(3.4rem, white);  
+    @include title(3.4rem, white);
 }
 
 .title {
     text-align: center;
-    @include title(2.3rem,$colorRed);  
+    @include title(2.3rem,$colorRed);
 }
 
 .information-container {
@@ -37,13 +37,13 @@ $colorRed: rgb(255,70,70);
         @include text(1.2rem,black,500);
         margin-bottom: 10px;
     }
-    
+
     .text {
         text-align: center;
         margin-bottom: 10px;
         @include text(1rem,black,400);
     }
-    
+
     .image-container{
         display: flex;
         justify-content: center;
