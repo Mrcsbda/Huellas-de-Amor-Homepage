@@ -36,26 +36,7 @@ h2 {
   @include title(2.3rem, $colorRed);
 }
 
-.information-1 {
-  width: 100vw;
-  padding: 10px 15px;
-
-  p {
-    text-align: center;
-    margin-bottom: 15px;
-    @include text(1.1rem, black, 400);
-  }
-
-  .image {
-    display: flex;
-    justify-content: center;
-    img {
-      width: 70%;
-    }
-  }
-}
-
-.information-2 {
+.information-1, .information-2 {
   width: 100vw;
   padding: 10px 15px;
 
