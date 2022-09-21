@@ -1,15 +1,24 @@
-$font-titles: 'Chewy', cursive;
-$font-texts: 'Raleway', sans-serif;
+$font-titles: "Chewy", cursive;
+$font-texts: "Raleway", sans-serif;
 
-@mixin title($size, $color: black, $weight:normal) {
-    font-size: $size;
-    font-family: $font-titles;
-    color: $color;
-    font-weight: $weight;
+@mixin title($size, $color: black, $weight: normal) {
+  font-size: $size;
+  font-family: $font-titles;
+  color: $color;
+  font-weight: $weight;
 }
-@mixin text($size, $color: black, $weight:normal) {
-    font-size: $size;
-    font-family: $font-texts;
-    color: $color;
-    font-weight: $weight;
+@mixin text($size, $color: black, $weight: normal) {
+  font-size: $size;
+  font-family: $font-texts;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin titleSection($width, $height) {
+  width: $width;
+  height: $height;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
 }

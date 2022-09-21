@@ -36,7 +36,8 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-bottom: 25px;
+  justify-content: center;  
 
   .card {
     width: 40%;
@@ -48,12 +49,13 @@
     img {
       width: 100%;
     }
+
+    &::before {
+      @include title(1.7rem, white);
+      @include beforeMobile($colorRed);
+    }
   }
 
-  .card::before {
-    @include title(1.7rem, white);
-    @include beforeMobile($colorRed);
-  }
   .card-adopts::before {
     content: "Adopta";
   }
