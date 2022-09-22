@@ -1,0 +1,112 @@
+@import "../shared/texts.scss";
+@import "../shared/variables.scss";
+
+.main-image-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+  justify-content: center;
+
+  .main-image {
+    display: block;
+    width: 100%;
+  }
+
+  &::before {
+    content: "Contacto";
+    @include titleSection(70%, 100%);
+    @include title(2.6rem, white);
+  }
+}
+
+.title {
+  text-align: center;
+  @include title(2.5rem, $colorRed);
+}
+
+.information {
+  padding: 5px 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  @include text(1.1rem, black, 400);
+}
+
+.form-container {
+  margin-bottom: 20px;
+
+  .form-image {
+    display: none;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+
+    form {
+      width: 80%;
+      padding: 35px 25px;
+      border-radius: 10px;
+      background-color: $colorRosewood;
+
+      label {
+        margin-bottom: 5px;
+        display: inline-block;
+        @include text(1.3rem, white, 500);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-family: "Raleway", sans-serif;
+      }
+
+      textarea {
+        height: 30vw;
+        resize: none;
+      }
+
+      button {
+        background-color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        @include text(1.3rem, $colorRosewood, 500);
+      }
+    }
+  }
+}
+
+.icons-container {
+  gap: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-direction: column;
+
+  .facebook, .instagram, .whatsapp {
+    gap: 10px;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: max-content;
+      height: 100%;
+      display: block;
+      img {
+        height: 100%;
+      }
+    }
+
+    p {
+      @include title(1.3rem, black, 500);
+    }
+  }
+}

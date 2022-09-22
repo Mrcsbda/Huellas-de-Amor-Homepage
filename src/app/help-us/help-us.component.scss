@@ -13,8 +13,8 @@
 
   &::before {
     content: "Ayudanos";
-    @include titleSection(70%, 100%);
     @include title(3rem, white);
+    @include titleSection(70%, 100%);
   }
 }
 
@@ -56,10 +56,11 @@ h2 {
 }
 
 .image-adoptando {
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
+
   img {
-    width: 80%;
+    width: 90%;
   }
 }

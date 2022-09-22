@@ -51,7 +51,7 @@
     }
 
     &::before {
-      @include title(1.7rem, white);
+      @include title(1.5rem, white);
       @include beforeMobile($colorRed);
     }
   }
