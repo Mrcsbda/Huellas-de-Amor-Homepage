@@ -89,20 +89,17 @@
   justify-content: center;
   flex-direction: column;
 
-  .facebook, .instagram, .whatsapp {
+  .facebook,
+  .instagram,
+  .whatsapp {
     gap: 10px;
     height: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    a {
-      width: max-content;
+    img {
       height: 100%;
-      display: block;
-      img {
-        height: 100%;
-      }
     }
 
     p {

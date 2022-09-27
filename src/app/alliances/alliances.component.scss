@@ -1,0 +1,78 @@
+@import "../shared/texts.scss";
+@import "../shared/variables.scss";
+
+.main-image-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+
+  .main-image {
+    display: block;
+    width: 100%;
+  }
+
+  &::before {
+    content: "Alianzas";
+    @include title(3.4rem, white);
+    @include titleSection(70%, 100%);
+  }
+}
+
+.title {
+  text-align: center;
+  @include title(2.3rem, $colorRed);
+}
+
+.information-container {
+  padding: 10px 15px;
+
+  .text {
+    text-align: center;
+    margin-bottom: 10px;
+    @include text(1rem, black, 400);
+  }
+}
+
+.alliance-container {
+  gap: 10px;
+  display: flex;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 70%;
+    margin-bottom: 7px;
+    border-radius: 10px;
+  }
+
+  .alliance-information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      @include title(2rem, $colorRed);
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 15px;
+      @include text(1rem, black, 400);
+    }
+
+    a {
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      width: max-content;
+      text-decoration: none;
+      background-color: $colorRosewood;
+      @include text(1.3rem, white, 500);
+    }
+  }
+}
