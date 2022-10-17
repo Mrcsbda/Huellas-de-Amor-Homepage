@@ -9,6 +9,7 @@ import { ContactModule } from './contact/contact.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import {CommonComponentsModule} from "./common-components/common-components.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {CommonComponentsModule} from "./common-components/common-components.modu
     AlliancesModule,
     HelpUsModule,
     ContactModule,
-    CommonComponentsModule
+    CommonComponentsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

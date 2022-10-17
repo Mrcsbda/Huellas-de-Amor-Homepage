@@ -1,10 +1,20 @@
 <nav class="navbar">
   <img class="navbar-logo" src="../assets/images/Logo.jpg" alt="Logotipo Huellas de Amor">
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav>
+      <mat-nav-list>
+        <ul class="navbar-menu">
+          <mat-icon>
+            
+          </mat-icon>
+          <li routerLink="{{item.route}}" *ngFor="let item of elements">{{item.label}}</li>
+        </ul>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
   <ul class="navbar-menu">
-    <li routerLink="">Inicio</li>
-    <li routerLink="adopta">Adopta</li>
-    <li routerLink="alianzas">Alianzas</li>
-    <li routerLink="ayudanos">Ayudanos</li>
-    <li routerLink="contacto">Contacto</li>
+    <li routerLink="{{item.route}}" *ngFor="let item of elements">{{item.label}}</li>
   </ul>
 </nav>
