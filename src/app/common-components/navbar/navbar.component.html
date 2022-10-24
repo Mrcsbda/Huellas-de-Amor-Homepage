@@ -1,20 +1,38 @@
 <nav class="navbar">
-  <img class="navbar-logo" src="../assets/images/Logo.jpg" alt="Logotipo Huellas de Amor">
+  <img
+    class="navbar-logo"
+    src="../assets/images/Logo.jpg"
+    alt="Logotipo Huellas de Amor"
+  />
 
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav>
-      <mat-nav-list>
-        <ul class="navbar-menu">
-          <mat-icon>
-            
-          </mat-icon>
-          <li routerLink="{{item.route}}" *ngFor="let item of elements">{{item.label}}</li>
-        </ul>
-      </mat-nav-list>
+  <mat-sidenav-container
+    class="example-container"
+    (backdropClick)="close('backdrop')"
+  >
+    <mat-sidenav
+      #sidenav
+      (keydown.escape)="close('escape')"
+      disableClose
+      mode="over"
+    >
+      <p (click)="close('toggle button')">
+        <span class="material-icons close"> highlight_off </span>
+      </p>
+        <div (click)="close('toggle button')" routerLink="{{ item.route }}" *ngFor="let item of elements">
+          {{ item.label }}
+      </div>
     </mat-sidenav>
+
+    <mat-sidenav-content>
+      <p (click)="openSidenav()">
+        <span class="material-icons menu" *ngIf="!active"> menu </span>
+      </p>
+    </mat-sidenav-content>
   </mat-sidenav-container>
 
   <ul class="navbar-menu">
-    <li routerLink="{{item.route}}" *ngFor="let item of elements">{{item.label}}</li>
+    <li routerLink="{{ item.route }}" *ngFor="let item of elements">
+      {{ item.label }}
+    </li>
   </ul>
 </nav>

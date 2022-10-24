@@ -21,6 +21,7 @@
 .title {
   text-align: center;
   @include title(2.3rem, $colorRed);
+  margin: 0px 10px;
 }
 
 .information-container {
