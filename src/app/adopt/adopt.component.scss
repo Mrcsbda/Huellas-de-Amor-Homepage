@@ -53,11 +53,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  padding: 7px;
   justify-content: center;
 
   div {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
@@ -133,32 +134,26 @@
   }
 
   .dogs-container {
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 35px;
+    padding: 20px;
 
     div {
-      width: 19rem;
-      height: 19rem;
-      overflow: hidden;
-      position: relative;
-      border-radius: 15px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      width: 20rem;
+      height: 20rem;
 
       p {
-        width: 100%;
-        bottom: 0px;
-        height: 25%;
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        background-color: $colorRed;
-        @include title(1.5rem, white);
+        @include title(2.9rem, white);
+        transition: height 0.7s;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover p {
+        height: 100%;
+        transition: height 0.7s;
       }
     }
   }
