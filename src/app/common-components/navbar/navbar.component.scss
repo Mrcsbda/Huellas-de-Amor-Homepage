@@ -54,8 +54,8 @@
 
 @media only screen and (min-width: 1280px) {
   .navbar {
-    flex-direction: row;
     height: 100%;
+    flex-direction: row;
 
     .navbar-logo {
       width: 7%;
@@ -63,13 +63,12 @@
     }
 
     .navbar-menu {
-      list-style: none;
-      display: inline;
-      display: flex;
       gap: 30px;
+      display: flex;
+      list-style: none;
       padding: 0px 30px;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       @include title(1.8rem, $colorRed);
 
       li {
