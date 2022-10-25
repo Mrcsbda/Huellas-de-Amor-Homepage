@@ -56,15 +56,15 @@
   justify-content: center;
 
   div {
-    width: 45vw;
-    height: 45vw;
+    width: 11rem;
+    height: 11rem;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
 
     img {
       width: 100%;
-      height: 45vw;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -78,6 +78,88 @@
       justify-content: center;
       background-color: $colorRed;
       @include title(1.5rem, white);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .main-image-container {
+    margin-bottom: 20px;
+
+    .main-image {
+      display: block;
+      width: 100%;
+    }
+
+    &::before {
+      content: "Adopta";
+      @include title(10rem, white);
+      @include titleSection(70%, 100%);
+    }
+  }
+
+  .title {
+    @include title(4rem, $colorRed);
+  }
+
+  .information-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .text-container {
+      width: 50%;
+
+      .subtitle {
+        @include text(2rem, black, 500);
+      }
+
+      .text {
+        word-spacing: 10px;
+        letter-spacing: 1px;
+        @include text(1.7rem, black, 400);
+      }
+    }
+
+    .image-container {
+      width: 31rem;
+      padding: 0px 0px;
+
+      .secondary-image {
+        width: 100%;
+      }
+    }
+  }
+
+  .dogs-container {
+    gap: 10px;
+    margin-bottom: 35px;
+
+    div {
+      width: 19rem;
+      height: 19rem;
+      overflow: hidden;
+      position: relative;
+      border-radius: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      p {
+        width: 100%;
+        bottom: 0px;
+        height: 25%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: $colorRed;
+        @include title(1.5rem, white);
+      }
     }
   }
 }
