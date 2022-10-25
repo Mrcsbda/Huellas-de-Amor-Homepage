@@ -1,10 +1,11 @@
-@import '../../shared/variables.scss';
-@import '../../shared/texts.scss';
+@import "../../shared/variables.scss";
+@import "../../shared/texts.scss";
+
 .navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   flex-direction: row-reverse;
 
   .navbar-logo {
@@ -19,33 +20,68 @@
 }
 
 .example-container {
-  position: absolute;
-  top: 9px;
-  left: 20px;
   background-color: white;
+
+  .menu {
+    color: $colorRed;
+    font-size: 2.5rem;
+  }
+
+  .close {
+    font-size: 2rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .active {
+    visibility: hidden;
+  }
+
+  .items {
+    position: fixed;
+    left: 0;
+    padding: 20px;
+    color: $colorRed;
+    @include title(2rem, $colorRed);
+
+    div {
+      margin-bottom: 10px;
+      outline: none;
+    }
+  }
 }
 
-.menu {
-  color: $colorRed;
-  font-size: 2.5rem;
-}
+@media only screen and (min-width: 1280px) {
+  .navbar {
+    flex-direction: row;
+    height: 100%;
 
-.close {
-  font-size: 2rem;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
+    .navbar-logo {
+      width: 7%;
+      height: 100%;
+    }
 
-.mat-drawer {
-  position: fixed;
-  left: 0;
-  padding: 20px;
-  color:  $colorRed;
-  @include title(2rem, $colorRed);
+    .navbar-menu {
+      list-style: none;
+      display: inline;
+      display: flex;
+      gap: 30px;
+      padding: 0px 30px;
+      justify-content: center;
+      align-items: center;
+      @include title(1.8rem, $colorRed);
 
-  div {
-    margin-bottom:10px;
-    outline: none;
+      li {
+        &:hover {
+          opacity: 0.6;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .example-container {
+    display: none;
   }
 }

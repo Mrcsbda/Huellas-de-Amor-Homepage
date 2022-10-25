@@ -1,6 +1,6 @@
 <div class="page-container"
 [class.active]="activeSidenav">
-  <app-navbar (activeSidenav)="getActiveSidenav($event)"></app-navbar>
+  <app-navbar class="app-navbar" (activeSidenav)="getActiveSidenav($event)"></app-navbar>
   <main>
     <router-outlet></router-outlet>
   </main>

@@ -14,6 +14,7 @@
       (keydown.escape)="close('escape')"
       disableClose
       mode="over"
+      class="items"
     >
       <p (click)="close('toggle button')">
         <span class="material-icons close"> highlight_off </span>
@@ -24,9 +25,9 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <p (click)="openSidenav()">
-        <span class="material-icons menu" *ngIf="!active"> menu </span>
-      </p>
+        <p (click)="openSidenav()">
+          <span class="material-icons menu" [class.active]="active"> menu </span>
+        </p>
     </mat-sidenav-content>
   </mat-sidenav-container>
 
