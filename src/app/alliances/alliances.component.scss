@@ -77,3 +77,57 @@
     }
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .main-image-container {
+    margin-bottom: 20px;
+
+    &::before {
+      @include title(10rem, white);
+    }
+  }
+
+  .title {
+    @include title(4rem, $colorRed);
+  }
+
+  .information-container {
+    padding: 15px 30px;
+
+    .text {
+      @include text(1.7rem, black, 400);
+    }
+  }
+
+  .alliance-container {
+    gap: 20px;
+    padding: 0px 50px;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      width: 20%;
+      margin-bottom: 10px;
+      border-radius: 15px;
+    }
+
+    .alliance-information {
+      margin-bottom: 10px;
+      width: 35%;
+
+      h2 {
+        @include title(3rem, $colorRed);
+      }
+
+      p {
+        @include text(1.7rem, black, 400);
+      }
+
+      a {
+        padding: 15px;
+        border-radius: 10px;
+        @include text(1.7rem, white, 500);
+      }
+    }
+  }
+}

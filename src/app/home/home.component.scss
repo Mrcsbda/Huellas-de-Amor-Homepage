@@ -24,9 +24,10 @@
   .image-container {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     .secondary-image {
-      width: 80%;
+      width: 20rem;
     }
   }
 }
@@ -53,7 +54,7 @@
 
     &::before {
       @include title(1.5rem, white);
-      @include beforeMobile($colorRed);
+      @include before($colorRed, 22%);
     }
   }
 
@@ -124,7 +125,7 @@
       &::before {
         transition: height 0.7s;
         @include title(2.9rem, white);
-        @include beforeDesktop($colorRed);
+        @include before($colorRed, 20%);
       }
 
       &:hover {

@@ -41,9 +41,10 @@
   .image-container {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     .secondary-image {
-      width: 70%;
+      width: 18rem;
     }
   }
 }
@@ -87,15 +88,9 @@
   .main-image-container {
     margin-bottom: 20px;
 
-    .main-image {
-      display: block;
-      width: 100%;
-    }
-
     &::before {
       content: "Adopta";
       @include title(10rem, white);
-      @include titleSection(70%, 100%);
     }
   }
 
