@@ -107,3 +107,96 @@
     }
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .main-image-container {
+    margin-bottom: 20px;
+
+    &::before {
+      @include title(10rem, white);
+    }
+  }
+
+  .title {
+    @include title(4rem, $colorRed);
+  }
+
+  .information {
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    @include text(1.7rem, black, 400);
+  }
+
+  .form-container {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .form-image {
+      height: 45rem;
+      display: inline;
+    }
+
+    .form {
+      display: flex;
+      justify-content: center;
+      width: 45rem;
+      padding: 20px;
+
+      form {
+        border-radius: 15px;
+        padding: 45px;
+        
+
+        label {
+          margin-bottom: 10px;
+          @include text(1.8rem, white, 500);
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 15px 20px;
+          border-radius: 7px;
+          margin-bottom: 25px;
+          @include text(1.5rem, black, 500);
+        }
+
+        textarea {
+          height: 10vw;
+          resize: none;
+        }
+
+        button {
+          padding: 15px 20px;
+          border-radius: 7px;
+          @include text(1.7rem, $colorRosewood, 500);
+
+          &:hover {
+            color: rgb(253, 139, 114);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .icons-container {
+    gap: 50px;
+    margin-bottom: 20px;
+    flex-direction: row;
+
+    .facebook,
+    .instagram,
+    .whatsapp {
+      gap: 10px;
+      height: 4rem;
+
+      p {
+        @include title(1.7rem, black, 500);
+      }
+    }
+  }
+}

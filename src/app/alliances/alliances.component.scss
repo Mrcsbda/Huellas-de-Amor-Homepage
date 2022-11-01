@@ -127,6 +127,11 @@
         padding: 15px;
         border-radius: 10px;
         @include text(1.7rem, white, 500);
+
+        &:hover {
+          background-color: rgb(253, 139, 114);
+          cursor: pointer;
+        }
       }
     }
   }
