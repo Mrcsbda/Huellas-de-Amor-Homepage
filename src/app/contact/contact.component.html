@@ -1,59 +1,67 @@
 <main>
-
-  <div class="main-image-container">
-    <img
-      class="main-image"
-      src="../../assets/images/Contact/Main.jpg"
-      alt="imagen principal"
-    />
-  </div>
-
-  <h1 class="title">¡Contactanos!</h1>
-
-  <p class="information">
-    Si quieres más información sobre nosotros o que requisitos necesitas para
-    adoptar a algún cachorro no dudes en contactarnos.
-  </p>
-
-  <div class="form-container">
-    <img
-      class="form-image"
-      src="../../assets/images/Contact/Formulario.jpg"
-      alt="imagen que acompaña el formulario"
-    />
-    <div class="form">
-      <form>
-        <label for="name">Nombre Completo</label>
-        <input id="name" type="text" required />
-        <label for="phone">Número de celular</label>
-        <input id="phone" type="number" required />
-        <label for="email">Correo electronico</label>
-        <input id="email" type="email" required />
-        <label for="phone">Cuentanos que quieres saber</label>
-        <textarea id="phone" type="text" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+  <div [hidden]="loading">
+    <div class="loader-animation">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 
-  <p class="information">
-    ¡Si te sientes más comodo, no dudes en contactarnos por nuestras redes
-    sociales si requieres alguna información sobre nosotros o algún peludo!
-  </p>
+  <div [hidden]="!loading">
+    <div class="main-image-container">
+      <img
+        class="main-image"
+        src="../../assets/images/Contact/Main.jpg"
+        alt="imagen principal"
+      />
+    </div>
 
-  <section class="icons-container">
-    <div class="facebook">
-      <img src="../../assets/images/Contact/facebook-icon.svg" alt="" />
-      <p>Huellas de Amor</p>
+    <h1 class="title">¡Contactanos!</h1>
+
+    <p class="information">
+      Si quieres más información sobre nosotros o que requisitos necesitas para
+      adoptar a algún cachorro no dudes en contactarnos.
+    </p>
+
+    <div class="form-container">
+      <img
+        class="form-image"
+        src="../../assets/images/Contact/Formulario.jpg"
+        alt="imagen que acompaña el formulario"
+      />
+      <div class="form">
+        <form>
+          <label for="name">Nombre Completo</label>
+          <input id="name" type="text" required />
+          <label for="phone">Número de celular</label>
+          <input id="phone" type="number" required />
+          <label for="email">Correo electronico</label>
+          <input id="email" type="email" required />
+          <label for="phone">Cuentanos que quieres saber</label>
+          <textarea id="phone" type="text" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
-    <div class="instagram">
-      <img src="../../assets/images/Contact/instagram-icon.svg" alt="" />
-      <p>_huellas_de_amor</p>
-    </div>
-    <div class="whatsapp">
-      <img src="../../assets/images/Contact/whatsapp-icon.svg" alt="" />
-      <p>+57 312 265 3000</p>
-    </div>
-  </section>
-  
+
+    <p class="information">
+      ¡Si te sientes más comodo, no dudes en contactarnos por nuestras redes
+      sociales si requieres alguna información sobre nosotros o algún peludo!
+    </p>
+
+    <section class="icons-container">
+      <div class="facebook">
+        <img src="../../assets/images/Contact/facebook-icon.svg" alt="" />
+        <p>Huellas de Amor</p>
+      </div>
+      <div class="instagram">
+        <img src="../../assets/images/Contact/instagram-icon.svg" alt="" />
+        <p>_huellas_de_amor</p>
+      </div>
+      <div class="whatsapp">
+        <img src="../../assets/images/Contact/whatsapp-icon.svg" alt="" />
+        <p>+57 312 265 3000</p>
+      </div>
+    </section>
+  </div>
 </main>

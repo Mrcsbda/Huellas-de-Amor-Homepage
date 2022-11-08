@@ -1,127 +1,136 @@
 <main>
-  <div class="main-image-container">
-    <img
-      class="main-image"
-      src="../../assets/images/Help-Us/Main.jpg"
-      alt="imagen principal"
-    />
+  <div [hidden]="loading">
+    <div class="loader-animation">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
-  <h1 class="title">¿Quieres Ayudarnos?</h1>
-  <h3 class="subtitle">¡Te contamos varias maneras de vincularte!</h3>
-
-  <h2>Donando</h2>
-  <section class="information-1">
-   <div>
-    <p>
-      Puedes hacer aportes economicos desde $1,000 CO o puedes donar en especie
-      y nosotros recogemos las donaciones en tu casa o lugar de trabajo. <br />
-    </p>
-    <h3 class="subtitle">¿Qué puedes donar en especia?</h3>
-    <p>
-      Concentrado de perros y gatos adultos y cachorros. <br />
-      Alimento humedo. <br />
-      Vitaminas. <br />
-      Medicamentos. <br />
-      Todo lo que creas que pueda contribuir en su rehabilitación.
-    </p>
-   </div>
-    <div class="image">
-      <img src="../../assets/images/Help-Us/Donacion.jpg" alt="Donacion" />
-    </div>
-  </section>
-
-  <h2>Comprando a nuestros aliados</h2>
-  <section class="information-2">
-    <p>
-      Cuando haces una compra a nuestro nombre un porcentaje economico se
-      destina a nuestros animales.
-    </p>
-    <div class="image">
+  <div [hidden]="!loading">
+    <div class="main-image-container">
       <img
-        src="../../assets/images/Help-Us/Compra.jpg"
-        alt="Compra a aliados"
+        class="main-image"
+        src="../../assets/images/Help-Us/Main.jpg"
+        alt="imagen principal"
       />
     </div>
-  </section>
-
-  <h2>Brindando Hogares de paso</h2>
-  <section class="information-1">
-    <p>
-      Si cuentas con el espacio, el tiempo y el amor para apoyar uno de nuestros
-      rescates mientras hacemos todo su proceso de rehabilitación y encontramos
-      una familia para siempre, serás de gran apoyo. Nosotros cubrimos todos sus
-      gastos.
-    </p>
-    <div class="image">
-      <img
-        src="../../assets/images/Help-Us/Hogar-de-paso.jpg"
-        alt="Hogar de paso"
-      />
+    <h1 class="title">¿Quieres Ayudarnos?</h1>
+    <h3 class="subtitle">¡Te contamos varias maneras de vincularte!</h3>
+  
+    <h2>Donando</h2>
+    <section class="information-1">
+     <div>
+      <p>
+        Puedes hacer aportes economicos desde $1,000 CO o puedes donar en especie
+        y nosotros recogemos las donaciones en tu casa o lugar de trabajo. <br />
+      </p>
+      <h3 class="subtitle">¿Qué puedes donar en especia?</h3>
+      <p>
+        Concentrado de perros y gatos adultos y cachorros. <br />
+        Alimento humedo. <br />
+        Vitaminas. <br />
+        Medicamentos. <br />
+        Todo lo que creas que pueda contribuir en su rehabilitación.
+      </p>
+     </div>
+      <div class="image">
+        <img src="../../assets/images/Help-Us/Donacion.jpg" alt="Donacion" />
+      </div>
+    </section>
+  
+    <h2>Comprando a nuestros aliados</h2>
+    <section class="information-2">
+      <p>
+        Cuando haces una compra a nuestro nombre un porcentaje economico se
+        destina a nuestros animales.
+      </p>
+      <div class="image">
+        <img
+          src="../../assets/images/Help-Us/Compra.jpg"
+          alt="Compra a aliados"
+        />
+      </div>
+    </section>
+  
+    <h2>Brindando Hogares de paso</h2>
+    <section class="information-1">
+      <p>
+        Si cuentas con el espacio, el tiempo y el amor para apoyar uno de nuestros
+        rescates mientras hacemos todo su proceso de rehabilitación y encontramos
+        una familia para siempre, serás de gran apoyo. Nosotros cubrimos todos sus
+        gastos.
+      </p>
+      <div class="image">
+        <img
+          src="../../assets/images/Help-Us/Hogar-de-paso.jpg"
+          alt="Hogar de paso"
+        />
+      </div>
+    </section>
+  
+    <h2>Participando en nuestras actividades</h2>
+    <section class="information-2">
+      <p>
+        Constantemente realizamos actividades tales como rifas, ventas, eventos,
+        entre otras; para recaudar fondos y cubrir las necesidades de nuestros
+        animales como alimentación, consultas, tratamientos y mucho más.
+      </p>
+      <div class="image">
+        <img
+          src="../../assets/images/Help-Us/Actividades.jpg"
+          alt="Participacion de actividades"
+        />
+      </div>
+    </section>
+  
+    <h2>Apadrinando un peludo</h2>
+    <section class="information-1">
+      <p>
+        Tenemos un plan padrino donde puedes donar $10,000 CO mensuales que serán
+        destinado para alimento o puedes donar una cantidad de alimento mensual,
+        nosotros lo recogemos o también puedes llevarlo al hogar de paso donde se
+        encuentre tu ahijado y pasar un rato con el/ella.
+      </p>
+      <div class="image">
+        <img src="../../assets/images/Help-Us/Apadrinar.jpg" alt="Apadrinando" />
+      </div>
+    </section>
+  
+    <h2>Voz a Voz</h2>
+    <section class="information-2">
+      <p>
+        ¡Puedes hablarle de nosotros a tus conocidos! Si compartes nuestras redes
+        sociales, si hablas de nosotros con tu papá, tu tio, tu hermano, el amigo
+        del amigo, nos empezaran a conocer más personas y podremos crecer.
+      </p>
+      <div class="image">
+        <img src="../../assets/images/Help-Us/vozavoz.jpg" alt="Voz a voz" />
+      </div>
+    </section>
+  
+    <h2>Adoptando</h2>
+    <section class="information-1">
+     <div>
+      <p>
+        Adoptar es una decisión para siempre, cambia la rutina de tu vida y
+        modifica la estructura familiar , pero es la decisión más amorosa ,
+        empatica , compasiva y llena de magia . Puedes transformar una vida ,
+        darle la oportunidad a uno de nuestros peluditos nos permite poder ayudar
+        a otros y que está comunidad siga creciendo.
+      </p>
+      <h3 class="subtitle">¿Qué beneficios trae adoptar?</h3>
+      <p>
+        Crea un vinculo afectivo. <br />
+        Disminuye niveles de estres. <br />
+        Tendrás amor incondicional disponible 24hr. <br />
+        Estableces rutinas que permiten adquirir disciplina y responsabilidad.
+      </p>
+      <h3 class="subtitle">¡Adoptar salva vidas!</h3>
+     </div>
+    </section>
+  
+    <div class="image-adoptando">
+      <img src="../../assets/images/Help-Us/Adopcion.jpg" alt="Voz a voz" />
     </div>
-  </section>
-
-  <h2>Participando en nuestras actividades</h2>
-  <section class="information-2">
-    <p>
-      Constantemente realizamos actividades tales como rifas, ventas, eventos,
-      entre otras; para recaudar fondos y cubrir las necesidades de nuestros
-      animales como alimentación, consultas, tratamientos y mucho más.
-    </p>
-    <div class="image">
-      <img
-        src="../../assets/images/Help-Us/Actividades.jpg"
-        alt="Participacion de actividades"
-      />
-    </div>
-  </section>
-
-  <h2>Apadrinando un peludo</h2>
-  <section class="information-1">
-    <p>
-      Tenemos un plan padrino donde puedes donar $10,000 CO mensuales que serán
-      destinado para alimento o puedes donar una cantidad de alimento mensual,
-      nosotros lo recogemos o también puedes llevarlo al hogar de paso donde se
-      encuentre tu ahijado y pasar un rato con el/ella.
-    </p>
-    <div class="image">
-      <img src="../../assets/images/Help-Us/Apadrinar.jpg" alt="Apadrinando" />
-    </div>
-  </section>
-
-  <h2>Voz a Voz</h2>
-  <section class="information-2">
-    <p>
-      ¡Puedes hablarle de nosotros a tus conocidos! Si compartes nuestras redes
-      sociales, si hablas de nosotros con tu papá, tu tio, tu hermano, el amigo
-      del amigo, nos empezaran a conocer más personas y podremos crecer.
-    </p>
-    <div class="image">
-      <img src="../../assets/images/Help-Us/vozavoz.jpg" alt="Voz a voz" />
-    </div>
-  </section>
-
-  <h2>Adoptando</h2>
-  <section class="information-1">
-   <div>
-    <p>
-      Adoptar es una decisión para siempre, cambia la rutina de tu vida y
-      modifica la estructura familiar , pero es la decisión más amorosa ,
-      empatica , compasiva y llena de magia . Puedes transformar una vida ,
-      darle la oportunidad a uno de nuestros peluditos nos permite poder ayudar
-      a otros y que está comunidad siga creciendo.
-    </p>
-    <h3 class="subtitle">¿Qué beneficios trae adoptar?</h3>
-    <p>
-      Crea un vinculo afectivo. <br />
-      Disminuye niveles de estres. <br />
-      Tendrás amor incondicional disponible 24hr. <br />
-      Estableces rutinas que permiten adquirir disciplina y responsabilidad.
-    </p>
-    <h3 class="subtitle">¡Adoptar salva vidas!</h3>
-   </div>
-  </section>
-
-  <div class="image-adoptando">
-    <img src="../../assets/images/Help-Us/Adopcion.jpg" alt="Voz a voz" />
   </div>
 </main>

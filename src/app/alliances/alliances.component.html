@@ -1,39 +1,49 @@
 <main>
-  <div class="main-image-container">
-    <img class="main-image" src="../../assets/images/alliances/Main.jpg" />
-  </div>
-
-  <h1 class="title">Todos unidos por los animales</h1>
-  <section class="information-container">
-    <p class="text">
-      Por cada compra que realices a nombre de huellas de amor nuestros animales
-      recibiran un porcentaje que será destinado a su alimentación y/o
-      tratamientos.
-    </p>
-  </section>
-
-  <div class="alliance-container">
-    <img src="../../assets/images/alliances/crocanticos.png" alt="logo" />
-    <div class="alliance-information">
-      <h2>Crocanticos Medellin</h2>
-      <p>
-        Deliciosos Pasteles de Pollo y Empanadas, <br />
-        ¡Pide los tuyos!
-      </p>
-      <a href="https://www.instagram.com/crocanticos_medellin/">
-        Contactanos
-      </a>
+  <div [hidden]="loading">
+    <div class="loader-animation">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 
-  <div class="alliance-container">
-    <img src="../../assets/images/alliances/Sr.bigotes.png" alt="logo" />
-    <div class="alliance-information">
-      <h2>Sr. Bigotes</h2>
-      <p>
-        Tienda de Mascotas, donde encontrarás ventas al por mayor y al detal.
+  <div [hidden]="!loading">
+    <div class="main-image-container">
+      <img class="main-image" src="../../assets/images/alliances/Main.jpg" />
+    </div>
+  
+    <h1 class="title">Todos unidos por los animales</h1>
+    <section class="information-container">
+      <p class="text">
+        Por cada compra que realices a nombre de huellas de amor nuestros animales
+        recibiran un porcentaje que será destinado a su alimentación y/o
+        tratamientos.
       </p>
-      <a href="https://www.instagram.com/sr_bigotes02/"> Contactanos </a>
+    </section>
+  
+    <div class="alliance-container">
+      <img src="../../assets/images/alliances/crocanticos.png" alt="logo" />
+      <div class="alliance-information">
+        <h2>Crocanticos Medellin</h2>
+        <p>
+          Deliciosos Pasteles de Pollo y Empanadas, <br />
+          ¡Pide los tuyos!
+        </p>
+        <a href="https://www.instagram.com/crocanticos_medellin/">
+          Contactanos
+        </a>
+      </div>
+    </div>
+  
+    <div class="alliance-container">
+      <img src="../../assets/images/alliances/Sr.bigotes.png" alt="logo" />
+      <div class="alliance-information">
+        <h2>Sr. Bigotes</h2>
+        <p>
+          Tienda de Mascotas, donde encontrarás ventas al por mayor y al detal.
+        </p>
+        <a href="https://www.instagram.com/sr_bigotes02/"> Contactanos </a>
+      </div>
     </div>
   </div>
 </main>

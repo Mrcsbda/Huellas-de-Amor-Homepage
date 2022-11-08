@@ -112,7 +112,6 @@
     width: 100%;
     margin-bottom: 50px;
 
-
     .card {
       width: 19rem;
       position: relative;
@@ -133,8 +132,8 @@
       }
 
       &:hover::before {
-      height: 100%;
-      transition: height 0.7s;
+        height: 100%;
+        transition: height 0.7s;
       }
     }
   }

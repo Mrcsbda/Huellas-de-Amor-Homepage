@@ -1,4 +1,13 @@
-<img
+<div [hidden]="loading">
+  <div class="loader-animation">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div [hidden]="!loading">
+  <img
   class="main-image"
   src="../../../assets/images/Homepage/Main.jpg"
   alt="imagen principal"
@@ -34,3 +43,5 @@
     <img src="../../../assets/images/Homepage/Contacto.jpg" alt="" />
   </div>
 </section>
+
+</div>
