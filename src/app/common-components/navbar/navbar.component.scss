@@ -11,10 +11,6 @@
   .navbar-logo {
     width: 18%;
     height: 100%;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   .navbar-menu {
@@ -64,6 +60,10 @@
     .navbar-logo {
       width: 7%;
       height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .navbar-menu {
